@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nayantara's — Pure Honey, Premium Spices & Dry Fruits</title>
+  <meta name="description" content="Nayantara's offers 100% pure honey, premium spices, and dry fruits. Sourced from Sundarban forests and trusted farms. No chemicals, no preservatives." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nayantaras.com/" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nayantara's — Pure Spices, Honey & Dry Fruits" />
+  <meta property="og:description" content="100% natural spices and Sundarban honey from West Bengal. No chemicals, no preservatives." />
+  <meta property="og:url" content="https://nayantaras.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="Image/logo.jpg" />
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Nayantara's by Hexafy Agro Tech",
+      "url": "https://nayantaras.com",
+      "telephone": "+91-8282954836",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Padmapukur Kazipara, Baruipur",
+        "addressLocality": "Baruipur",
+        "addressRegion": "West Bengal",
+        "postalCode": "700144",
+        "addressCountry": "IN"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Hexafy Agro Te",
+      "brand": "Nayantara's",
+      "offers": {
+        "@type": "Offer",
+        "price": "790",
+        "priceCurrency": "INR"
+      }
+    }
+  </script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    /* ── Design Tokens ── */
+    :root {
+      --ink: #0f1a0f;
+      --forest: #1b3d23;
+      --moss: #2d6641;
+      --fern: #4a9463;
+      --sage-light: #c8dfc8;
+      --parchment: #f7f2e8;
+      --cream: #faf7f1;
+      --gold: #c5922a;
+      --amber: #e8a820;
+      --saffron: #f0c040;
+      --chili: #c0392b;
+      --text-mid: #4a5340;
+      --text-soft: #8a9280;
+      --white: #ffffff;
+      --shadow-sm: 0 2px 12px rgba(15, 26, 15, 0.07);
+      --shadow-md: 0 8px 32px rgba(15, 26, 15, 0.12);
+      --shadow-lg: 0 20px 60px rgba(15, 26, 15, 0.16);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 28px;
+      --radius-xl: 40px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ── Announcement ── */
+    .announce {
+      background: var(--forest);
+      color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 9px 16px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .announce strong {
+      color: var(--saffron);
+    }
+
+    /* ── Navigation ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(250, 247, 241, 0.97);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(197, 146, 42, 0.18);
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6%;
+      transition: box-shadow 0.3s ease;
+    }
+    nav.scrolled {
+      box-shadow: 0 2px 20px rgba(15, 26, 15, 0.1);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .nav-brand img {
+      height: 44px;
+      width: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(197, 146, 42, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .nav-brand:hover img {
+      transform: scale(1.05) rotate(-2deg);
+    }
+    .nav-brand-text {
+      font-family: 'Fraunces', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--forest);
+      letter-spacing: -0.01em;
+    }
+    .nav-brand-sub {
+      font-size: 0.6rem;
+      color: var(--text-soft);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: block;
+      line-height: 1;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-mid);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      position: relative;
+      transition: color 0.2s ease;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 100%;
+      height: 1.5px;
+      background: var(--gold);
+      transition: right 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: var(--forest);
+    }
+    .nav-links a:hover::after {
+      right: 0;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .nav-phone {
+      font-size: 0.78rem;
+      color: var(--forest);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .btn-nav {
+      background: var(--forest);
+      color: #fff;
+      padding: 9px 22px;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .btn-nav:hover {
+      background: var(--moss);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(27, 61, 35, 0.25);
+    }
+
+    /* ── Hero ── */
+    .hero {
+      min-height: calc(100vh - 70px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 60px 6% 80px;
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -100px;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(ellipse, rgba(197, 146, 42, 0.1) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(27, 61, 35, 0.07) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero-leaf {
+      position: absolute;
+      top: 10%;
+      right: 3%;
+      font-size: 6rem;
+      opacity: 0.07;
+      pointer-events: none;
+      transform: rotate(20deg);
+    }
+
+    .hero-left {
+      z-index: 1;
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(27, 61, 35, 0.07);
+      border: 1px solid rgba(27, 61, 35, 0.15);
+      color: var(--forest);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 26px;
+    }
+    .hero-tag .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(3rem, 5vw, 5rem);
+      font-weight: 900;
+      line-height: 1.02;
+      color: var(--forest);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+      display: block;
+    }
+    .hero-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      color: var(--text-mid);
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+    .hero-desc {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      line-height: 1.75;
+      max-width: 460px;
+      margin-bottom: 36px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .btn-primary {
+      background: var(--forest);
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .btn-primary:hover {
+      background: var(--moss);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(27, 61, 35, 0.3);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--forest);
+      border: 1.5px solid var(--forest);
+      padding: 13px 28px;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .btn-outline:hover {
+      background: var(--forest);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .hero-stats {
+      display: flex;
+      gap: 36px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(27, 61, 35, 0.1);
+    }
+    .stat-n {
+      font-family: 'Fraunces', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--forest);
+      line-height: 1;
+    }
+    .stat-l {
+      font-size: 0.72rem;
+      color: var(--text-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-top: 4px;
+    }
+
+    /* ── Hero Showcase ── */
+    .hero-right {
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .hero-showcase {
+      position: relative;
+      width: 440px;
+      height: 440px;
+    }
+    .showcase-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(135deg, var(--forest), var(--moss));
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 16px 48px rgba(27, 61, 35, 0.35);
+      z-index: 3;
+      transition: transform 0.4s ease;
+    }
+    .showcase-center:hover {
+      transform: translate(-50%, -50%) scale(1.04);
+    }
+    .showcase-center-text {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      line-height: 1.3;
+    }
+    .showcase-center-sub {
+      font-size: 0.65rem;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .orbit-card {
+      position: absolute;
+      width: 110px;
+      height: 120px;
+      background: var(--white);
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(197, 146, 42, 0.15);
+      cursor: pointer;
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+      text-decoration: none;
+    }
+    .orbit-card:hover {
+      transform: scale(1.12) translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+    .orbit-card img {
+      width: 62px;
+      height: 62px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+    .orbit-card:hover img {
+      transform: scale(1.05) rotate(-4deg);
+    }
+    .orbit-card-name {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--forest);
+      text-align: center;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+    .orbit-card.c1 {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .orbit-card.c2 {
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+    .orbit-card.c3 {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .orbit-card.c4 {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    .orbit-card.c1:hover {
+      transform: translateX(-50%) scale(1.12) translateY(-6px);
+    }
+    .orbit-card.c2:hover {
+      transform: translateY(-50%) scale(1.12) translateX(4px);
+    }
+    .orbit-card.c3:hover {
+      transform: translateX(-50%) scale(1.12) translateY(6px);
+    }
+    .orbit-card.c4:hover {
+      transform: translateY(-50%) scale(1.12) translateX(-4px);
+    }
+
+    @keyframes floatC1 {
+      0%, 100% { top: 0; }
+      50% { top: -10px; }
+    }
+    @keyframes floatC2 {
+      0%, 100% { right: 0; }
+      50% { right: -8px; }
+    }
+    @keyframes floatC3 {
+      0%, 100% { bottom: 0; }
+      50% { bottom: -10px; }
+    }
+    @keyframes floatC4 {
+      0%, 100% { left: 0; }
+      50% { left: -8px; }
+    }
+    .orbit-card.c1 { animation: floatC1 4.2s ease-in-out infinite; }
+    .orbit-card.c2 { animation: floatC2 4.8s ease-in-out infinite 0.6s; }
+    .orbit-card.c3 { animation: floatC3 4.2s ease-in-out infinite 1.2s; }
+    .orbit-card.c4 { animation: floatC4 4.8s ease-in-out infinite 1.8s; }
+
+    /* ── Trust Ribbon ── */
+    .trust-ribbon {
+      background: var(--forest);
+      padding: 14px 6%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    .trust-item:hover {
+      color: var(--saffron);
+    }
+    .trust-icon {
+      width: 28px;
+      height: 28px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      transition: background 0.2s ease;
+    }
+    .trust-item:hover .trust-icon {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* ── Sections ── */
+    section {
+      padding: 90px 6%;
+      scroll-margin-top: 70px;
+    }
+    .sec-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .sec-eye {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .sec-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--forest);
+      line-height: 1.1;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .sec-sub {
+      font-size: 0.97rem;
+      color: var(--text-mid);
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* ── Products ── */
+    .products-section {
+      background: var(--parchment);
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 24px;
+    }
+    .product-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid rgba(197, 146, 42, 0.1);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+      cursor: pointer;
+      position: relative;
+    }
+    .product-card:hover {
+      transform: translateY(-12px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .product-card[data-p="chili"] .pimg {
+      background: linear-gradient(145deg, #fff5f3, #fde0dd);
+    }
+    .product-card[data-p="turmeric"] .pimg {
+      background: linear-gradient(145deg, #fffcf0, #fef3d0);
+    }
+    .product-card[data-p="cumin"] .pimg {
+      background: linear-gradient(145deg, #f9f6ef, #ece5d6);
+    }
+    .product-card[data-p="coriander"] .pimg {
+      background: linear-gradient(145deg, #f0f8f0, #dcf0dc);
+    }
+    .product-card[data-p="honey"] .pimg {
+      background: linear-gradient(145deg, #fffbf0, #feefc8);
+    }
+    .product-card[data-p="combo"] .pimg {
+      background: linear-gradient(145deg, #f0f5f0, #e0f0e0);
+    }
+
+    .pimg {
+      height: 230px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .p-slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .p-slider img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.55s ease;
+    }
+    .p-slider img.active {
+      opacity: 1;
+    }
+    .sl-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.85);
+      border: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
+      font-size: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--forest);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .sl-btn:hover {
+      background: #fff;
+      transform: translateY(-50%) scale(1.1);
+    }
+    .sl-btn.prev {
+      left: 10px;
+    }
+    .sl-btn.next {
+      right: 10px;
+    }
+    .p-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+      z-index: 10;
+    }
+    .p-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(27, 61, 35, 0.25);
+      transition: background 0.3s ease, width 0.3s ease;
+      cursor: pointer;
+    }
+    .p-dot.active {
+      background: var(--forest);
+      width: 14px;
+      border-radius: 3px;
+    }
+    .pbadge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 5;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 11px;
+      border-radius: 50px;
+    }
+    .pbadge.natural {
+      background: var(--forest);
+      color: #fff;
+    }
+    .pbadge.sundarban {
+      background: var(--gold);
+      color: #fff;
+    }
+    .pbadge.special {
+      background: var(--chili);
+      color: #fff;
+    }
+    .pinfo {
+      padding: 22px 22px 26px;
+    }
+    .pcat {
+      font-size: 0.68rem;
+      color: var(--text-soft);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .pname {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--forest);
+      margin-bottom: 5px;
+      letter-spacing: -0.01em;
+    }
+    .pwt {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      margin-bottom: 14px;
+    }
+    .ptags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+    .ptag {
+      font-size: 0.66rem;
+      padding: 4px 11px;
+      border-radius: 50px;
+      background: rgba(27, 61, 35, 0.06);
+      color: var(--forest);
+      font-weight: 500;
+      border: 1px solid rgba(27, 61, 35, 0.08);
+    }
+    .pfooter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .pprice {
+      font-family: 'Fraunces', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+    .pprice span {
+      font-size: 0.82rem;
+      font-weight: 400;
+      color: var(--text-soft);
+      font-family: 'DM Sans', sans-serif;
+    }
+    .order-btn {
+      background: var(--forest);
+      color: #fff;
+      padding: 9px 18px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .order-btn:hover {
+      background: var(--moss);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(27, 61, 35, 0.25);
+    }
+
+    /* ── Featured Banner ── */
+    .featured-wrap {
+      padding: 0 6% 90px;
+      background: var(--parchment);
+    }
+    .featured-inner {
+      background: linear-gradient(135deg, #152a1a 0%, #2a5435 50%, #0f1e12 100%);
+      border-radius: var(--radius-xl);
+      padding: 56px 6%;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .featured-inner::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -5%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(197, 146, 42, 0.12) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .feat-eye {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--amber);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .feat-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 18px;
+      letter-spacing: -0.02em;
+    }
+    .feat-title em {
+      color: var(--amber);
+      font-style: italic;
+    }
+    .feat-desc {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.97rem;
+      line-height: 1.75;
+      margin-bottom: 28px;
+      max-width: 440px;
+    }
+    .feat-benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 34px;
+    }
+    .feat-ben {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.85rem;
+    }
+    .feat-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--amber);
+      flex-shrink: 0;
+    }
+    .btn-amber {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--amber);
+      color: #1a0f00;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .btn-amber:hover {
+      background: var(--saffron);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(232, 168, 32, 0.35);
+    }
+    .feat-img-wrap {
+      flex-shrink: 0;
+      width: 300px;
+      position: relative;
+      z-index: 1;
+    }
+    .feat-slider {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.05);
+      position: relative;
+    }
+    .feat-slider img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 24px;
+      opacity: 0;
+      transition: opacity 0.7s ease;
+    }
+    .feat-slider img.active {
+      opacity: 1;
+    }
+
+    /* ── Why Us ── */
+    .why-section {
+      background: var(--cream);
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 22px;
+    }
+    .why-card {
+      padding: 34px 26px;
+      border-radius: var(--radius-md);
+      background: var(--white);
+      border: 1px solid rgba(197, 146, 42, 0.1);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+      text-align: center;
+    }
+    .why-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+    .why-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, rgba(27, 61, 35, 0.07), rgba(27, 61, 35, 0.03));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin: 0 auto 18px;
+      border: 1px solid rgba(27, 61, 35, 0.08);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .why-card:hover .why-icon {
+      background: linear-gradient(135deg, rgba(27, 61, 35, 0.15), rgba(27, 61, 35, 0.05));
+      transform: scale(1.05);
+    }
+    .why-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--forest);
+      margin-bottom: 10px;
+    }
+    .why-desc {
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      line-height: 1.65;
+    }
+
+    /* ── Gallery ── */
+    .gallery-section {
+      background: var(--parchment);
+    }
+    .gallery-scroll {
+      width: 100%;
+      overflow: hidden;
+      padding: 10px 0;
+    }
+    .gallery-track {
+      display: flex;
+      gap: 18px;
+      width: max-content;
+      animation: galleryScroll 28s linear infinite;
+    }
+    .gallery-track:hover {
+      animation-play-state: paused;
+    }
+    .gallery-track img {
+      width: 260px;
+      height: 340px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: pointer;
+    }
+    .gallery-track img:hover {
+      transform: scale(1.06);
+      box-shadow: var(--shadow-lg);
+    }
+    @keyframes galleryScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: var(--forest);
+      text-align: center;
+      padding: 90px 6%;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '🍯';
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14rem;
+      opacity: 0.04;
+      pointer-events: none;
+    }
+    .cta-section::after {
+      content: '🌿';
+      position: absolute;
+      left: 3%;
+      bottom: 10%;
+      font-size: 10rem;
+      opacity: 0.05;
+      pointer-events: none;
+    }
+    .cta-section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: #fff;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .cta-section h2 em {
+      color: var(--amber);
+      font-style: italic;
+    }
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 480px;
+      margin: 0 auto 40px;
+      font-size: 0.97rem;
+      line-height: 1.75;
+    }
+    .cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--amber);
+      color: #1a0f00;
+      padding: 15px 34px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .btn-call:hover {
+      background: var(--saffron);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(232, 168, 32, 0.4);
+    }
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: #fff;
+      padding: 15px 34px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .btn-wa:hover {
+      background: #1ea952;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(37, 211, 102, 0.35);
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #111c12;
+      color: #fff;
+      padding: 72px 6% 28px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 48px;
+      margin-bottom: 56px;
+    }
+    .footer-brand h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+    .footer-brand p {
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 0.85rem;
+      line-height: 1.75;
+      margin-bottom: 22px;
+    }
+    .footer-social {
+      display: flex;
+      gap: 10px;
+    }
+    .fsoc-link {
+      width: 38px;
+      height: 38px;
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+    .fsoc-link:hover {
+      background: rgba(197, 146, 42, 0.25);
+      color: var(--amber);
+      transform: translateY(-3px);
+    }
+    .footer-col h4 {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 18px;
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+    .footer-col ul a {
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s ease, padding-left 0.2s ease;
+    }
+    .footer-col ul a:hover {
+      color: rgba(255, 255, 255, 0.9);
+      padding-left: 4px;
+    }
+    .footer-col .contact-item {
+      display: flex;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+      line-height: 1.55;
+    }
+    .footer-col .contact-item a {
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .footer-col .contact-item a:hover {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      text-align: center;
+    }
+    .footer-bottom p {
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 0.8rem;
+    }
+    .footer-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+    .fbadge {
+      background: rgba(197, 146, 42, 0.15);
+      border: 1px solid rgba(197, 146, 42, 0.25);
+      color: var(--amber);
+      padding: 5px 14px;
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Scroll Reveal ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 1100px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 50px 6% 60px;
+        gap: 50px;
+      }
+      .hero-desc {
+        max-width: 100%;
+      }
+      .hero-ctas {
+        justify-content: center;
+      }
+      .hero-stats {
+        justify-content: center;
+      }
+      .hero-right {
+        order: -1;
+      }
+      .hero-showcase {
+        width: 340px;
+        height: 340px;
+      }
+      .showcase-center {
+        width: 160px;
+        height: 160px;
+      }
+      .orbit-card {
+        width: 90px;
+        height: 100px;
+      }
+      .orbit-card img {
+        width: 50px;
+        height: 50px;
+      }
+      .featured-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .feat-desc {
+        max-width: 100%;
+      }
+      .feat-img-wrap {
+        width: 240px;
+        margin: 0 auto;
+      }
+      .feat-benefits {
+        justify-content: center;
+      }
+      .nav-links {
+        display: none;
+      }
+      .nav-phone {
+        display: none;
+      }
+    }
+    @media (max-width: 640px) {
+      section {
+        padding: 60px 5%;
+      }
+      .hero {
+        padding: 40px 5% 50px;
+      }
+      .hero-showcase {
+        width: 280px;
+        height: 280px;
+      }
+      .showcase-center {
+        width: 130px;
+        height: 130px;
+      }
+      .orbit-card {
+        width: 76px;
+        height: 84px;
+      }
+      .orbit-card img {
+        width: 40px;
+        height: 40px;
+      }
+      .orbit-card-name {
+        font-size: 0.58rem;
+      }
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .cta-btns {
+        flex-direction: column;
+        align-items: center;
+      }
+      .btn-call,
+      .btn-wa {
+        width: 100%;
+        justify-content: center;
+      }
+      .trust-ribbon {
+        gap: 20px;
+      }
+      .feat-img-wrap {
+        width: 200px;
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--cream);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--sage-light);
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Announcement ── -->
+  <div class="announce">
+    <span>🌿</span>
+    Free delivery on orders above <strong>₹1599</strong> &nbsp;|&nbsp; Call: <strong>8282954836</strong>
+  </div>
+
+  <!-- ── Navigation ── -->
+  <nav id="mainNav">
+    <a href="#home" class="nav-brand">
+      <img src="Image/logo.jpg" alt="Nayantara's Logo" onerror="this.style.display='none'" />
+      <div>
+        <span style="font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;color:var(--forest)">Nayantara's</span>
+        <span class="nav-brand-sub">Hexafy Agro Tech</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#honey-section">Honey</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-phone">📞 8282954836</span>
+      <a href="#products" class="btn-nav">🛒 Order Now</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="home">
+    <span class="hero-leaf" aria-hidden="true">🌿</span>
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        Pure Food.
+        <em>Pure Life.</em>
+      </div>
+      <h1>
+        Pure Honey, Premium Spices & Dry Fruits in India
+      </h1>
+      <p class="hero-sub">Nature's finest, straight to your table</p>
+      <p class="hero-desc">
+        From Sundarban forests and the finest spice farms —
+        100% natural, unadulterated products crafted for families
+        who deserve nothing but the very best.
+      </p>
+      <div class="hero-ctas">
+        <a href="#products" class="btn-primary">Shop Products ↓</a>
+        <a href="tel:8282954836" class="btn-outline">📞 Call to Order</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Natural</div></div>
+        <div class="stat"><div class="stat-n">Zero</div><div class="stat-l">Chemicals</div></div>
+        <div class="stat"><div class="stat-n">5★</div><div class="stat-l">Trusted</div></div>
+        <div class="stat"><div class="stat-n">200g+</div><div class="stat-l">Net Weight</div></div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-showcase">
+        <div class="showcase-center">
+          <div class="showcase-center-text">Nayantara's</div>
+          <div class="showcase-center-sub">Pure &amp; Natural</div>
+        </div>
+        <a href="#products" class="orbit-card c1">
+          <img src="Image/Chilli.png" alt="Chili Powder" onerror="this.textContent='🌶️'" />
+          <span class="orbit-card-name">Chili Powder</span>
+        </a>
+        <a href="#products" class="orbit-card c2">
+          <img src="Image/Coriender.png" alt="Coriander Powder" onerror="this.textContent='🌿'" />
+          <span class="orbit-card-name">Coriander</span>
+        </a>
+        <a href="#products" class="orbit-card c3">
+          <img src="Image/Multiflora.png" alt="Honey" onerror="this.textContent='🍯'" />
+          <span class="orbit-card-name">Pure Honey</span>
+        </a>
+        <a href="#products" class="orbit-card c4">
+          <img src="Image/Cumin.png" alt="Cumin Powder" onerror="this.textContent='🌰'" />
+          <span class="orbit-card-name">Cumin Powder</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trust Ribbon ── -->
+  <div class="trust-ribbon">
+    <div class="trust-item"><span class="trust-icon">🌿</span> 100% Natural</div>
+    <div class="trust-item"><span class="trust-icon">🚫</span> No Artificial Colors</div>
+    <div class="trust-item"><span class="trust-icon">✅</span> Guaranteed Purity</div>
+    <div class="trust-item"><span class="trust-icon">🚚</span> Fast &amp; Safe Delivery</div>
+    <div class="trust-item"><span class="trust-icon">🏆</span> Premium Quality</div>
+  </div>
+
+  <!-- ── Products ── -->
+  <section class="products-section" id="products">
+    <div class="sec-header">
+      <div class="sec-eye">Our Range</div>
+      <h2 class="sec-title">Pure Spices &amp; Natural Honey</h2>
+      <p class="sec-sub">Every product is sourced from the finest farms, ground fresh, and packed with zero additives.</p>
+    </div>
+    <div class="products-grid">
+
+      <!-- Chili -->
+      <div class="product-card reveal" data-p="chili">
+        <div class="pimg">
+          <div class="p-slider" id="sl-chili">
+            <img src="Image/Chilli%20Powder.png" class="active" alt="Pure Chili Powder" />
+            <img src="Image/Chilli.png" alt="Pure Chili Powder" />
+            <img src="Image/Chilli_Powder.png" alt="Pure Chili Powder" />
+          </div>
+          <button class="sl-btn prev" onclick="slide('sl-chili',-1)">❮</button>
+          <button class="sl-btn next" onclick="slide('sl-chili',1)">❯</button>
+          <div class="p-dots" id="dots-sl-chili"></div>
+          <span class="pbadge natural">100% Natural</span>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Spice · Hot &amp; Vibrant</div>
+          <div class="pname">Pure Chili Powder</div>
+          <div class="pwt">Net Wt. 200g</div>
+          <div class="ptags">
+            <span class="ptag">Bold Color</span>
+            <span class="ptag">Rich Heat</span>
+            <span class="ptag">No Additives</span>
+          </div>
+          <div class="pfooter">
+            <div class="pprice">₹46 <span>/ 100g</span></div>
+            <a href="https://mybillbook.in/store/nayantara_s?src=mbb" target="_blank" rel="noopener noreferrer" class="order-btn">Order Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Turmeric -->
+      <div class="product-card reveal" data-p="turmeric">
+        <div class="pimg">
+          <div class="p-slider" id="sl-turmeric">
+            <img src="Image/Turmeric_1.png" class="active" alt="Pure Turmeric Powder" />
+            <img src="Image/Turmeric.png" alt="Pure Turmeric Powder" />
+            <img src="Image/Turmeric%20Powder.png" alt="Pure Turmeric Powder" />
+          </div>
+          <button class="sl-btn prev" onclick="slide('sl-turmeric',-1)">❮</button>
+          <button class="sl-btn next" onclick="slide('sl-turmeric',1)">❯</button>
+          <div class="p-dots" id="dots-sl-turmeric"></div>
+          <span class="pbadge natural">100% Natural</span>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Spice · Healing &amp; Vibrant</div>
+          <div class="pname">Pure Turmeric Powder</div>
+          <div class="pwt">Net Wt. 200g</div>
+          <div class="ptags">
+            <span class="ptag">Anti-inflammatory</span>
+            <span class="ptag">High Curcumin</span>
+          </div>
+          <div class="pfooter">
+            <div class="pprice">₹35 <span>/ 100g</span></div>
+            <a href="https://mybillbook.in/store/nayantara_s?src=mbb" target="_blank" rel="noopener noreferrer" class="order-btn">Order Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cumin -->
+      <div class="product-card reveal" data-p="cumin">
+        <div class="pimg">
+          <div class="p-slider" id="sl-cumin">
+            <img src="Image/Cumn_1.png" class="active" alt="Pure Cumin Powder" />
+            <img src="Image/Cumin.png" alt="Pure Cumin Powder" />
+            <img src="Image/Cumin%20Powder.png" alt="Pure Cumin Powder" />
+          </div>
+          <button class="sl-btn prev" onclick="slide('sl-cumin',-1)">❮</button>
+          <button class="sl-btn next" onclick="slide('sl-cumin',1)">❯</button>
+          <div class="p-dots" id="dots-sl-cumin"></div>
+          <span class="pbadge natural">100% Natural</span>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Spice · Aromatic</div>
+          <div class="pname">Pure Cumin Powder</div>
+          <div class="pwt">Net Wt. 200g</div>
+          <div class="ptags">
+            <span class="ptag">Rich Aroma</span>
+            <span class="ptag">Aids Digestion</span>
+          </div>
+          <div class="pfooter">
+            <div class="pprice">₹48 <span>/ 100g</span></div>
+            <a href="https://mybillbook.in/store/nayantara_s?src=mbb" target="_blank" rel="noopener noreferrer" class="order-btn">Order Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coriander -->
+      <div class="product-card reveal" data-p="coriander">
+        <div class="pimg">
+          <div class="p-slider" id="sl-coriander">
+            <img src="Image/Coriender_1.png" class="active" alt="Pure Coriander Powder" />
+            <img src="Image/Coriender.png" alt="Pure Coriander Powder" />
+            <img src="Image/Coriender%20Powder.png" alt="Pure Coriander Powder" />
+          </div>
+          <button class="sl-btn prev" onclick="slide('sl-coriander',-1)">❮</button>
+          <button class="sl-btn next" onclick="slide('sl-coriander',1)">❯</button>
+          <div class="p-dots" id="dots-sl-coriander"></div>
+          <span class="pbadge natural">100% Natural</span>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Spice · Earthy</div>
+          <div class="pname">Pure Coriander Powder</div>
+          <div class="pwt">Net Wt. 200g</div>
+          <div class="ptags">
+            <span class="ptag">Citrusy Aroma</span>
+            <span class="ptag">Antioxidant</span>
+          </div>
+          <div class="pfooter">
+            <div class="pprice">₹33 <span>/ 100g</span></div>
+            <a href="https://mybillbook.in/store/nayantara_s?src=mbb" target="_blank" rel="noopener noreferrer" class="order-btn">Order Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multiflora Honey -->
+      <div class="product-card reveal" data-p="honey" id="honey-section">
+        <div class="pimg">
+          <div class="p-slider" id="sl-multi">
+            <img src="Image/Multiflora_Honey.png" class="active" alt="Pure Multiflora Honey" />
+            <img src="Image/Multiflora english.png" alt="Pure Multiflora Honey" />
+          </div>
+          <button class="sl-btn prev" onclick="slide('sl-multi',-1)">❮</button>
+          <button class="sl-btn next" onclick="slide('sl-multi',1)">❯</button>
+          <div class="p-dots" id="dots-sl-multi"></div>
+          <span class="pbadge sundarban">Sundarban</span>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Honey · Multiflora</div>
+          <div class="pname">Pure Multiflora Honey</div>
+          <div class="pwt">Net Wt. 500g</div>
+          <div class="ptags">
+            <span class="ptag">Raw &amp; Unfiltered</span>
+            <span class="ptag">Sundarban Forest</span>
+          </div>
+          <div class="pfooter">
+            <div class="pprice">₹790 <span>/ 1Kg</span></div>
+            <a href="https://mybillbook.in/store/nayantara_s?src=mbb" target="_blank" rel="noopener noreferrer" class="order-btn">Order Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Khalisha Honey -->
+      <div class="product-card reveal" data-p="honey" id="honey-khalisha">
+        <div class="pimg">
+          <div class="p-slider" id="sl-khalisha">
+            <img src="Image/Khalisha_honey.png" class="active" alt="Pure Khalisha Honey" />
+            <img src="Image/Multiflora english.png" alt="Pure Khalisha Honey" />
+          </div>
+          <button class="sl-btn prev" onclick="slide('sl-khalisha',-1)">❮</button>
+          <button class="sl-btn next" onclick="slide('sl-khalisha',1)">❯</button>
+          <div class="p-dots" id="dots-sl-khalisha"></div>
+          <span class="pbadge sundarban">Sundarban</span>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Honey · Khalisha</div>
+          <div class="pname">Pure Khalisha Honey</div>
+          <div class="pwt">Net Wt. 500g</div>
+          <div class="ptags">
+            <span class="ptag">Raw &amp; Unfiltered</span>
+            <span class="ptag">Sundarban Forest</span>
+          </div>
+          <div class="pfooter">
+            <div class="pprice">₹900 <span>/ 1Kg</span></div>
+            <a href="https://mybillbook.in/store/nayantara_s?src=mbb" target="_blank" rel="noopener noreferrer" class="order-btn">Order Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kalonji Honey -->
+      <div class="product-card reveal" data-p="honey" id="honey-kalonji">
+        <div class="pimg">
+          <div class="p-slider" id="sl-kalonji">
+            <img src="Image/Kalonji_Honey.png" class="active" alt="Pure Kalonji Honey" />
+            <img src="Image/Multiflora english.png" alt="Pure Kalonji Honey" />
+          </div>
+          <button class="sl-btn prev" onclick="slide('sl-kalonji',-1)">❮</button>
+          <button class="sl-btn next" onclick="slide('sl-kalonji',1)">❯</button>
+          <div class="p-dots" id="dots-sl-kalonji"></div>
+          <span class="pbadge sundarban">Sundarban</span>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Honey · Kalonji</div>
+          <div class="pname">Pure Kalonji Honey</div>
+          <div class="pwt">Net Wt. 500g</div>
+          <div class="ptags">
+            <span class="ptag">Raw &amp; Unfiltered</span>
+            <span class="ptag">Immunity Boost</span>
+          </div>
+          <div class="pfooter">
+            <div class="pprice">₹960 <span>/ 1Kg</span></div>
+            <a href="https://mybillbook.in/store/nayantara_s?src=mbb" target="_blank" rel="noopener noreferrer" class="order-btn">Order Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Honey Nuts -->
+      <div class="product-card reveal" data-p="combo" id="honey-nuts">
+        <div class="pimg">
+          <div class="p-slider" id="sl-nuts">
+            <img src="Image/Honey_Nuts.png" class="active" alt="Honey Nuts" />
+            <img src="Image/Honey_Nuts_1.png" alt="Honey Nuts" />
+          </div>
+          <button class="sl-btn prev" onclick="slide('sl-nuts',-1)">❮</button>
+          <button class="sl-btn next" onclick="slide('sl-nuts',1)">❯</button>
+          <div class="p-dots" id="dots-sl-nuts"></div>
+          <span class="pbadge special">Special</span>
+        </div>
+        <div class="pinfo">
+          <div class="pcat">Dry Foods · Honey Nuts</div>
+          <div class="pname">Honey Nuts</div>
+          <div class="pwt">Net Wt. 500g</div>
+          <div class="ptags">
+            <span class="ptag">Nutritious</span>
+            <span class="ptag">Energy Rich</span>
+            <span class="ptag">Natural</span>
+          </div>
+          <div class="pfooter">
+            <div class="pprice">₹630 <span>/ 500g</span></div>
+            <a href="https://mybillbook.in/store/nayantara_s?src=mbb" target="_blank" rel="noopener noreferrer" class="order-btn">Order Now →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Featured Banner ── -->
+  <div class="featured-wrap">
+    <div class="featured-inner reveal">
+      <div class="feat-content">
+        <div class="feat-eye">🌿 Nayantara's Premium Collection</div>
+        <h2 class="feat-title">
+          Pure Products from<br />
+          <em>Nature's Heart</em>
+        </h2>
+        <p class="feat-desc">
+          Discover our premium Sundarban honey and pure spice range — carefully selected,
+          hygienically packed, and delivered straight from nature to your family.
+        </p>
+        <div class="feat-benefits">
+          <div class="feat-ben"><span class="feat-dot"></span> 100% Natural Ingredients</div>
+          <div class="feat-ben"><span class="feat-dot"></span> Premium Quality Assured</div>
+          <div class="feat-ben"><span class="feat-dot"></span> Hygienically Packed</div>
+          <div class="feat-ben"><span class="feat-dot"></span> Direct WhatsApp Ordering</div>
+        </div>
+        <a href="https://wa.me/918282954836" class="btn-amber" target="_blank" rel="noopener noreferrer">
+          💬 Order on WhatsApp
+        </a>
+      </div>
+      <div class="feat-img-wrap">
+        <div class="feat-slider" id="feat-slider">
+          <img src="Image/Multiflora_Honey.png" class="active" alt="Multiflora Honey" />
+          <img src="Image/Khalisha_honey.png" alt="Khalisha Honey" />
+          <img src="Image/Kalonji_Honey.png" alt="Kalonji Honey" />
+          <img src="Image/Turmeric_1.png" alt="Turmeric Powder" />
+          <img src="Image/Chilli%20Powder.png" alt="Chilli Powder" />
+          <img src="Image/Coriender_1.png" alt="Coriander Powder" />
+          <img src="Image/Cumn_1.png" alt="Cumin Powder" />
+          <img src="Image/Honey_Nuts.png" alt="Honey Nuts" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Why Us ── -->
+  <section class="why-section" id="about">
+    <div class="sec-header">
+      <div class="sec-eye">Why Nayantara's</div>
+      <h2 class="sec-title">The Purity Promise</h2>
+      <p class="sec-sub">We don't just sell spices — we deliver nature's integrity in every pack.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">🌾</div>
+        <div class="why-title">Farm Sourced</div>
+        <p class="why-desc">Directly sourced from trusted farms ensuring freshness and authentic quality from root to pack.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🚫</div>
+        <div class="why-title">Zero Chemicals</div>
+        <p class="why-desc">No artificial colors, preservatives, or adulterants. What you see is exactly what nature made.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">👨‍👩‍👧</div>
+        <div class="why-title">Family Safe</div>
+        <p class="why-desc">Healthy and safe for everyone — from children to elders. Pure food for pure life.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🏆</div>
+        <div class="why-title">Premium Quality</div>
+        <p class="why-desc">Carefully selected raw materials, stone-ground to preserve natural oils, aroma, and color.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🚚</div>
+        <div class="why-title">Fast Delivery</div>
+        <p class="why-desc">Packed securely and delivered quickly to your doorstep, fresh and intact.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">💚</div>
+        <div class="why-title">Trusted Brand</div>
+        <p class="why-desc">Backed by Hexafy Agro Tech — committed to natural goodness since day one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Gallery ── -->
+  <section class="gallery-section" id="reviews">
+    <div class="sec-header">
+      <div class="sec-eye">Customer Gallery</div>
+      <h2 class="sec-title">Happy Customers</h2>
+      <p class="sec-sub">Real people, real purity. See why families across India trust Nayantara's.</p>
+    </div>
+    <div class="gallery-scroll">
+      <div class="gallery-track">
+        <img src="Image/CustomerReview/Customer_Review_1.jpeg" alt="Customer Review 1" />
+        <img src="Image/CustomerReview/Customer_Review_2.jpeg" alt="Customer Review 2" />
+        <img src="Image/CustomerReview/Customer_Review_3.jpeg" alt="Customer Review 3" />
+        <img src="Image/CustomerReview/Customer_Review_4.jpeg" alt="Customer Review 4" />
+        <!-- duplicate for seamless loop -->
+        <img src="Image/CustomerReview/Customer_Review_1.jpeg" alt="" aria-hidden="true" />
+        <img src="Image/CustomerReview/Customer_Review_2.jpeg" alt="" aria-hidden="true" />
+        <img src="Image/CustomerReview/Customer_Review_3.jpeg" alt="" aria-hidden="true" />
+        <img src="Image/CustomerReview/Customer_Review_4.jpeg" alt="" aria-hidden="true" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Order CTA ── -->
+  <section class="cta-section" id="contact">
+    <h2>Ready to Taste <em>Pure Nature?</em></h2>
+    <p>Order directly via WhatsApp or call us for the freshest spices and honey delivered to your home.</p>
+    <div class="cta-btns">
+      <a href="tel:8282954836" class="btn-call">📞 Call: 8282954836</a>
+      <a href="https://wa.me/918282954836" class="btn-wa" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+    <p style="color:rgba(255,255,255,0.3);font-size:0.78rem;margin-top:28px;position:relative;z-index:1;">
+      Nayantara's · Hexafy Agro Tech · Pure Food · Pure Life
+    </p>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Nayantara's</h3>
+        <p>Premium natural spices, honey, and dry fruits sourced from trusted farms. Pure quality, authentic taste, and healthy living delivered to your doorstep.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com/Nayantaras26" target="_blank" rel="noopener noreferrer" class="fsoc-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/Nayantaras26" target="_blank" rel="noopener noreferrer" class="fsoc-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/918282954836" target="_blank" rel="noopener noreferrer" class="fsoc-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Our Products</h4>
+        <ul>
+          <li><a href="#products">Chili Powder</a></li>
+          <li><a href="#products">Turmeric Powder</a></li>
+          <li><a href="#products">Cumin Powder</a></li>
+          <li><a href="#products">Coriander Powder</a></li>
+          <li><a href="#honey-section">Pure Honey</a></li>
+          <li><a href="#honey-nuts">Honey Nuts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="https://mybillbook.in/store/nayantara_s" target="_blank" rel="noopener noreferrer">Online Store</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <div class="contact-item">📞 <a href="tel:+918282954836">+91 8282954836</a></div>
+        <div class="contact-item">💬 <a href="https://wa.me/918282954836" target="_blank" rel="noopener noreferrer">WhatsApp Order</a></div>
+        <div class="contact-item">📧 <a href="mailto:official.nayantaras@gmail.com">official.nayantaras@gmail.com</a></div>
+        <div class="contact-item">📍 Padmapukur Kazipara, Baruipur, South 24 Parganas, West Bengal 700144</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Nayantara's by Hexafy Agro Tech. All Rights Reserved.</p>
+      <div class="footer-badges">
+        <span class="fbadge">✓ FSSAI Certified</span>
+        <span class="fbadge">✓ 100% Natural</span>
+        <span class="fbadge">✓ No Artificial Preservatives</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Product Slider ── */
+    function getSliderState(id) {
+      const slider = document.getElementById(id);
+      if (!slider) return null;
+      const imgs = slider.querySelectorAll('img');
+      const current = Array.from(imgs).findIndex(img => img.classList.contains('active'));
+      return { slider, imgs, current: current < 0 ? 0 : current };
+    }
+
+    function setSlide(id, idx) {
+      const state = getSliderState(id);
+      if (!state) return;
+      const { imgs } = state;
+      const next = (idx + imgs.length) % imgs.length;
+      imgs.forEach((img, i) => img.classList.toggle('active', i === next));
+      updateDots(id, next, imgs.length);
+    }
+
+    function slide(id, dir) {
+      const state = getSliderState(id);
+      if (!state) return;
+      setSlide(id, state.current + dir);
+    }
+
+    function buildDots(id, count) {
+      const dotsEl = document.getElementById('dots-' + id);
+      if (!dotsEl) return;
+      dotsEl.innerHTML = '';
+      for (let i = 0; i < count; i++) {
+        const d = document.createElement('span');
+        d.className = 'p-dot' + (i === 0 ? ' active' : '');
+        d.onclick = () => setSlide(id, i);
+        dotsEl.appendChild(d);
+      }
+    }
+
+    function updateDots(id, activeIdx, count) {
+      const dotsEl = document.getElementById('dots-' + id);
+      if (!dotsEl) return;
+      dotsEl.querySelectorAll('.p-dot').forEach((d, i) => d.classList.toggle('active', i === activeIdx));
+    }
+
+    const sliderIds = ['sl-chili', 'sl-turmeric', 'sl-cumin', 'sl-coriander', 'sl-multi', 'sl-khalisha', 'sl-kalonji', 'sl-nuts'];
+    sliderIds.forEach(function(id) {
+      const state = getSliderState(id);
+      if (!state || state.imgs.length <= 1) return;
+      buildDots(id, state.imgs.length);
+      const offset = sliderIds.indexOf(id) * 400;
+      setTimeout(function autoTick() {
+        slide(id, 1);
+        setTimeout(autoTick, 3200);
+      }, 3200 + offset);
+    });
+
+    /* ── Featured Slider ── */
+    (function() {
+      const slides = document.querySelectorAll('#feat-slider img');
+      if (!slides.length) return;
+      let ci = 0;
+      setInterval(function() {
+        slides[ci].classList.remove('active');
+        ci = (ci + 1) % slides.length;
+        slides[ci].classList.add('active');
+      }, 2800);
+    })();
+
+    /* ── Nav Scroll Shadow ── */
+    window.addEventListener('scroll', function() {
+      document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    /* ── Scroll Reveal ── */
+    const revealObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    /* ── Smooth Anchor Scroll ── */
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        const href = a.getAttribute('href');
+        if (!href || href === '#') { e.preventDefault(); return; }
+        let target;
+        try { target = document.querySelector(href); } catch (err) { return; }
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    /* ── Reduced Motion ── */
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.gallery-track').forEach(t => t.style.animation = 'none');
+    }
+  </script>
+</body>
+</html>

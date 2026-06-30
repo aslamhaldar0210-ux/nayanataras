@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nayantaras.com/sitemap.xml
